@@ -1,0 +1,7 @@
+# Entorno virtual
+env/
+
+# Carpetas de caché de Python
+__pycache__/
+
+config.py
