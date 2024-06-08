@@ -3,19 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/normalize.css">
     <link rel="stylesheet" href="../static/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Inicio</title>
 </head>
 <body>
-    <h1>User List</h1>
-    <a href="{{ url_for('add_user') }}">Add User</a>
-    <ul>
-      {% for user in users %}
-        <li>{{ user.username }} - {{ user.email }}
-          <a href="{{ url_for('edit_user', id=user.id) }}">Edit</a>
-          <a href="{{ url_for('delete_user', id=user.id) }}" onclick="return confirm('Are you sure?')">Delete</a>
-        </li>
-      {% endfor %}
-    </ul>
+  <div class="degradado">
+    <header class="header">
+      <div class="header-left">
+        <div class="logo">
+          
+        </div>
+        <h2 class="nombre-empresa">
+          Hydronet
+        </h2>
+      </div>
+      <div class="header-right">
+        <a href="#" class="opcion">
+          Iniciar Sesión
+        </a>
+        <a href="#"  class="opcion">
+          Registrarse
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="info">
+        <div class="cont-frase">
+          <h1 class="frase">UNETE A <br>
+            <span class="frase">LA CADENA <br>
+              <span class="frase">DE VALOR</span>
+            </span>
+          </h1>
+        </div>
+        <div class="cont-btn">
+          <div class="btn">
+            <a href="#" class="btn-int">
+              Unete aqui
+            </a>
+          </div>
+        </div>
+        <div class="frase-seguridad">
+          <i class='bx bxs-lock'></i>
+          <p class="frase-seguridad-int">Protegemos tus datos con los más altos estándares de seguridad.</p>
+        </div>
+      </div>
+      <div class="diagrama-ilustrativo">
+        <div class="circulo">
+          <div class="mini-circulo">
+            <i class='bx bx-child' ></i>
+          </div>
+          <div class="mini-circulo">
+            <i class='bx bxs-store-alt' ></i>
+          </div>
+          <div class="mini-circulo">
+            <i class='bx bxs-truck'></i>
+          </div>
+          <div class="mini-circulo">
+            <i class='bx bxs-factory' ></i>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+  <section class="section-empresas">
+    <div class="header-empresas">
+      <h2 class="empresas-titulo">EMPRESAS ASOCIADAS</h2>
+      <div class="btn">
+        <a class="btn-int" href="#">ver más</a>
+      </div>
+    </div>
+    <div class="empresas">
+      <div class="circulo-empresa">
+        <img src="../static/img/logo_jaguar.png" alt="">
+      </div>
+      <div class="circulo-empresa">
+        <img src="../static/img/unnamed.png" alt="">
+      </div>
+      <div class="circulo-empresa">
+        <img src="../static/img/Petronas_Logo.svg.png" alt="">
+      </div>
+      <div class="circulo-empresa">
+        <img src="../static/img/shell.webp" alt="">
+      </div>
+      <div class="circulo-empresa">
+        AMEXKI
+      </div>
+    </div>
+  </section>
+
+  <section class="nosotros">
+    <div class="header-nosotros">
+      <h1>NOSOTROS</h1>
+    </div>
+
+    <div class="cont-nosotros">
+      <div class="info-nosotros">
+        <h2 class="nosotros-titulo">
+          ¿QUIENES SOMOS?
+        </h2>
+        <p class="nosotros-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident animi laborum iure, voluptas quos repudiandae ad non commodi tempora recusandae officia excepturi quis labore pariatur fuga quam neque tempore quo.
+        </p>
+      </div>
+      <div class="img-nosotros">
+        <img src="../static/img/nosotros1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="nosotros-certificados">
+      <div class="header-certificados">
+        <h3 class="certificado-titulo">
+          NUESTROS CERTIFICADOS
+        </h3>
+        <div class="certificados">
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis explicabo repellat, suscipit commodi dolores itaque.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus libero ducimus id. Veritatis, voluptas tenetur!</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis iure accusantium amet eligendi eos voluptate.</li>
+            <li>Tempora assumenda magnam et nobis, ea accusantium ullam repellendus, cumque, deleniti dolor nam iste voluptates.</li>
+            <li>Suscipit quidem dicta ipsam beatae, perferendis rerum placeat sunt, iure earum cupiditate officia voluptatum nobis?</li>
+            <li>Nostrum quam iste debitis eaque. Minus quisquam adipisci quibusdam ex praesentium. Nam exercitationem nostrum mollitia.</li>
+            <li>Dolore, minus! Enim, aspernatur inventore fugit commodi suscipit in consectetur ipsam iste facilis debitis dolor.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-certificados">
+        <div class="img-certificado">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="nosotros-mvv">
+      <div class="mvv mision">
+        <h4>
+          MISION
+        </h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut facere obcaecati nobis fugiat temporibus laborum quibusdam accusamus similique minima corrupti. Fugiat dolorem harum totam non quae amet rem eos iure laboriosam consequatur similique sed adipisci eum provident quos, voluptatum natus.</p>
+      </div>
+      <div class="mvv vision">
+        <h4>
+          VISION
+        </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perferendis enim vel explicabo iure laboriosam deleniti! Similique accusantium doloribus recusandae sunt tenetur fugit est architecto accusamus pariatur, dolores commodi ratione, deserunt ullam libero, doloremque perferendis velit culpa quo aspernatur impedit?</p>
+      </div>
+      <div class="mvv valor">
+        <h4>
+          VALOR
+        </h4>
+        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti exercitationem cumque aperiam? Necessitatibus, laudantium voluptatem. Minima aperiam consequuntur voluptatibus quaerat quas sed maiores veritatis iure? Quam debitis iste dolorem. Minima voluptatum necessitatibus ipsum pariatur iure earum voluptatibus enim excepturi minus.</P>
+      </div>
+    </div>
+
+  </section>
+    
 </body>
 </html>
